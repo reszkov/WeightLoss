@@ -29,5 +29,7 @@ namespace WeightLoss.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<WeightLoss.Models.RestaurantReview> RestaurantReviews { get; set; }
     }
 }

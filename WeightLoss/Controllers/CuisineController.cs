@@ -8,9 +8,10 @@ namespace WeightLoss.Controllers
 {                   
     public class CuisineController : Controller
     {
-      [Authorize]
+      
         public ActionResult Search(string name = "Polish")
         {
+          
             var message = Server.HtmlEncode(name);
                 return Content(message);
         }
